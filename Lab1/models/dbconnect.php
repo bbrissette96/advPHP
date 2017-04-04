@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 /**
  * Function to establish a database connection
