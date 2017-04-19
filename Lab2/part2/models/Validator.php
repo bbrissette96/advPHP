@@ -4,9 +4,9 @@ class Validator
     function isValidEmail($email)
     {
         if (filter_var($email, FILTER_VALIDATE_EMAIL) !== false) {
-            return true;
+            return false;
         }
-        return false;
+        return true;
     }
 
     function isValidZIP($zip)
@@ -21,7 +21,12 @@ class Validator
 
     function isValidDate($date)
     {
-        return (bool)strtotime($date);
+        if ((bool)strtotime($date) === true){
+            return false;
+        }else{
+            return true;
+        }
+
     }
 }
 ?>

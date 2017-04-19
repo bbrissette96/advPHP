@@ -1,6 +1,6 @@
 <?php if ( is_array($address) && count($address) > 0 ) : ?>
     <h1>Address List</h1>
-    <table>
+    <table class="table">
         <tr>
             <th>Full Name</th>
             <th>Email</th>
